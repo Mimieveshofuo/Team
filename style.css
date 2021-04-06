@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.text{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.texthead{
+    padding-top: 35px;
+    width: 40%;
+    font-family: 'PT Serif', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.textbottom {
+    width: 40%;
+    font-family: 'Poppins',sans-serif;
+    padding-top: 35px;
+}
+.textbottom h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+.text p{
+    width: 395px;
+}
+.allimages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 53px;
+}
+
+ .photo1 img{ 
+     position: relative; 
+    width: 238px;
+} 
+.photo1{
+
+    position: relative;
+    width: 30%;
+}
+.photo1:nth-child(2){
+    position: relative;
+    top: 55px;
+}
+.photo1:nth-child(5) {
+    position: relative;
+    top: 133px;
+}
+ .ownerdes{ 
+    font-family: 'PT Serif',sans-serif;
+    position: absolute;
+    font-size:12px;
+    font-weight: 400;
+    font-style: normal;
+    right:-15%;
+    top: 11%;
+    transform: rotate(90deg);
+    text-transform: uppercase; 
+} 
+.des{
+    font-family: 'PT Serif',sans-serif;
+    position: absolute;
+    font-size:12px;
+    font-weight: 400;
+    font-style: normal;
+    right:-12%;
+    top: 11%;
+    transform: rotate(90deg);
+    text-transform: uppercase
+}
+.names{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height:21px;
+}
+footer{
+    text-align: center;
+    margin-top:15rem;
+    /* position: absolute; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+@media only screen and (min-width:1440px){ 
+    .ownerdes{
+        right:10%;
+    }
+    .des{
+        right: 12%;
+    }
+} 
+@media only screen and (max-width:768px){
+    .container{
+        
+        padding:20px;
+    }
+    .text{
+        display: grid;
+    }
+    .texthead{
+        width:unset;
+    }
+
+    .allimages{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .photo1{
+        width: unset;
+    }
+     
+    .photo1 img{
+        width: 150px;
+    }
+    .photo1:nth-child(2){
+        padding-left: 39px;
+    }
+    .photo1:nth-child(3){
+        top:30px;
+    }
+    .photo1:nth-child(4){
+        top:88px;
+        padding-left: 41px;
+    }
+    .photo1:nth-child(5){
+        top:80px;
+    }
+    .photo1:nth-child(6){
+        top:133px;
+        padding-left:50px
+    }
+    .ownerdes{
+        right:-61px;
+        top:17%;
+    }
+    .des{
+        right: -41px;
+    }
+ footer{
+     margin-right: -5.8rem;
+ }
+} 
